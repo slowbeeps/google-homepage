@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <div id="about-store-div">
+        <div class="header-links-div">
             <a href="#" class="header-nav-links about-store-links">
                 About
             </a>
@@ -17,7 +17,7 @@
                 Store
             </a>
         </div>
-        <div id="right-nav-group">
+        <div class="header-links-div">
             <div id="gmail-images-div">
                 <a href="#" class="header-nav-links gmail-images-links">
                     Gmail
@@ -28,34 +28,38 @@
             </div>
             <div id="right-nav-btns">
                 <a href="#" class="right-nav-btn">
-                    <img src="apps-icon.jpg">
+                    <img id="apps-img" src="assets/apps_black.png">
                 </a>
-                <a href="#" class="right-nav-btn">
-                    <button id="right-nav-signin">Sign in</button>
-                </a>
+
+                <button id="right-nav-signin" class="right-nav-btn" href="#">Sign in</button>
+
             </div>
         </div>
     </header>
     <main>
         <center>
-            <img src="logo.jpg">
+            <img id="google-logo-img" src="assets/logo.png">
             <form>
                 <div id="search-bar-div">
-                <input type="text" name="search-bar" id="search-bar">
+                    <img id="search" src="assets/search-icon.png">
+                    <input typse="text" name="search-bar" id="search-bar">
+                    <img id="voice" src="assets/search-by-voice-icon.png" alt="search-by-voice-icon">
                 </div>
-                <br>
-                <input type="button" name="google-search" value="Google Search">
-                <input type="button" name="lucky" value="I'm feeling lucky">
+                <div id="search-btns-div" <br>
+                    <input type="submit" name="google-search" value="Google Search">
             </form>
+            <button id="lucky" href="#">I'm feeling lucky</button>
+            </div>
+
         </center>
     </main>
     <footer>
-        <div id="footer-links-left">
+        <div class="footer-links">
             <a href="#">Advertising</a>
             <a href="#">Business</a>
             <a href="#">How search works</a>
         </div>
-        <div id="footer-links-right">
+        <div class="footer-links">
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
             <a href="#">Settings</a>
